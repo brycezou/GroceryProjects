@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:stretchColumns="1">
+    
+    <TableRow>
+        <TextView 
+        	android:text="IP"
+        	/>
+    	<EditText 
+    	    android:id="@+id/tIP"
+        	android:text="@string/initIP"
+        	android:singleLine="true"
+        	/>
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+        	android:text="端口"
+        	/>
+    	<EditText 
+    	    android:id="@+id/tPort"
+        	android:inputType="number"
+        	android:text="@string/initPort"
+        	android:singleLine="true"
+        	/>
+    </TableRow>
+    
+    <TableRow> 
+    	<Button 
+    	    android:id="@+id/bOKConn"
+        	android:text="@string/strOK"
+        	android:layout_column="5"
+        	android:onClick="clickSetOK"
+        	/>        
+    </TableRow>
+    
+    <View
+        android:layout_height="2dp"
+        android:background="#404040"
+        />
+    
+</TableLayout>
+

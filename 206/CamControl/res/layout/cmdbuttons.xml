@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+    <Button
+        android:id="@+id/bShoot"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:onClick="clickSetOK"
+        android:text="抓图"
+        />
+	<Button
+        android:id="@+id/bRefresh"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:onClick="clickSetOK"
+        android:layout_toRightOf="@+id/bShoot"
+        android:text="刷新"
+        /> 
+</RelativeLayout>
+

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server", "Server\Server.vcproj", "{BD716303-89E1-44D7-B157-9030ACFADF83}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cvlua", "cvlua\cvlua.vcproj", "{D9519275-67E6-4C4C-8577-409AA1EEDA99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD716303-89E1-44D7-B157-9030ACFADF83}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BD716303-89E1-44D7-B157-9030ACFADF83}.Debug|Win32.Build.0 = Debug|Win32
+		{BD716303-89E1-44D7-B157-9030ACFADF83}.Release|Win32.ActiveCfg = Release|Win32
+		{BD716303-89E1-44D7-B157-9030ACFADF83}.Release|Win32.Build.0 = Release|Win32
+		{D9519275-67E6-4C4C-8577-409AA1EEDA99}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D9519275-67E6-4C4C-8577-409AA1EEDA99}.Debug|Win32.Build.0 = Debug|Win32
+		{D9519275-67E6-4C4C-8577-409AA1EEDA99}.Release|Win32.ActiveCfg = Release|Win32
+		{D9519275-67E6-4C4C-8577-409AA1EEDA99}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

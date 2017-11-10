@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:stretchColumns="1">
+
+    <TableRow >
+        <TextView 
+        	android:textAppearance="?android:attr/textAppearanceSmall"
+        	android:text="Lab阈值"
+        	/>
+    	<EditText 
+    	    android:id="@+id/tLabThres"
+        	android:inputType="number"
+            android:minWidth="70dp"
+            android:singleLine="true"
+        	android:layout_column="2"
+        	android:text="@string/initLabThres"
+        	/>
+    	<Button 
+    	    android:id="@+id/bThresPlus"
+            android:text="+"
+            android:minWidth="50dp"
+            android:onClick="clickPlusOrMinus"
+            />
+        <Button 
+            android:id="@+id/bThresMinus"
+            android:text="-"
+            android:minWidth="50dp"
+            android:onClick="clickPlusOrMinus"
+            />
+    </TableRow>
+    
+    <TableRow>
+        <TextView 
+        	android:text="最大纠正次数"
+        	/>
+    	<EditText 
+    	    android:id="@+id/tLabCorr"
+        	android:inputType="number"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="0"
+        	/>
+        <Button 
+            android:id="@+id/bCorrPlus"
+            android:text="+"
+            android:minWidth="50dp"
+            android:onClick="clickPlusOrMinus"
+            />
+        <Button 
+            android:id="@+id/bCorrMinus"
+            android:text="-"
+            android:minWidth="50dp"
+            android:onClick="clickPlusOrMinus"
+            />
+    </TableRow>
+    
+    <TableRow>
+        <TextView 
+        	android:text="屏高比"
+        	/>
+    	<EditText 
+    	    android:id="@+id/tLabBorder"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="0.02"
+        	/>
+    </TableRow>
+
+    <TableRow>
+    	<TextView 
+        	android:text="运行间隔  "
+        	/>
+    	<EditText 
+    	    android:id="@+id/tParaTime"
+    	    android:layout_column="2"
+        	android:inputType="number"
+       		android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="1"
+        	/>
+		<TextView 
+        	android:text=" 秒"
+        	/> 	
+    </TableRow>
+
+    <TableRow>
+        <Button 
+            android:id="@+id/bOKLab"
+        	android:text="@string/strOK"
+        	android:layout_column="4"
+        	android:onClick="clickSetOK"
+        	/>
+        <Button 
+            android:id="@+id/bDoLab"
+        	android:text="自动"
+        	android:layout_column="5"
+        	android:onClick="clickSetOK"
+        	/>
+    </TableRow>
+        
+    <View
+        android:layout_height="2dp"
+        android:background="#404040"
+        />
+    
+</TableLayout>
+

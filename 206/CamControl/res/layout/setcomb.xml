@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:stretchColumns="3">
+    
+    <TableRow>
+        <TextView 
+        	android:text="块大小    "
+        	/>
+    	<EditText 
+    	    android:id="@+id/tComSize"
+        	android:inputType="number"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="1"
+        	/>
+    </TableRow>
+    
+    <TableRow>
+    	<TextView 
+        	android:text="块个数    "
+        	/>
+    	<EditText 
+    	    android:id="@+id/tComNum"
+        	android:inputType="number"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="0"
+        	/>
+    </TableRow>
+    
+    <TableRow>
+        <TextView 
+        	android:text="屏高比    "
+        	/>
+    	<EditText 
+    	    android:id="@+id/tWenLiHeChengBorder"
+        	android:layout_column="1"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="0.02"
+        	/>
+    </TableRow>
+   
+    <TableRow>
+   		<Button 
+   		    android:id="@+id/bOKComb"
+    	    android:layout_column="4"
+        	android:text="@string/strOK"
+        	android:onClick="clickSetOK"
+        	/>
+		<Button 
+   		    android:id="@+id/bDoComb"
+    	    android:layout_column="5"
+        	android:text="执行"
+        	android:onClick="clickSetOK"
+        	/>
+    </TableRow>
+    
+    <View
+        android:layout_height="2dp"
+        android:background="#404040"
+        />
+    
+</TableLayout>
+

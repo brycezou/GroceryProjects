@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TableLayout 
+        android:id="@+id/tbMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        
+        <TableRow>
+            <TextView 
+                android:text="@string/caption"
+                android:layout_span="5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+        </TableRow>
+        
+        <View
+            android:layout_height="4dp"
+            android:background="#808080"
+            />
+        
+        <TableRow>
+            <TextView 
+                android:text="参数"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+        </TableRow>
+        
+        <TableRow>
+            <TextView 
+                android:text="网络连接"
+                />
+            <TextView 
+                android:id="@+id/tIsConn"
+                android:text="未连接     "
+                android:layout_column="2"
+                android:textColor="#FFFFFF"
+                />
+            <ToggleButton
+                android:id="@+id/bConn"
+                android:onClick="clickConnect"
+                android:textOff="@string/connect"
+                android:textOn="@string/disconnect" 
+                />
+            <ToggleButton 
+                android:id="@+id/bSetConn"
+                android:textOn="@string/fold"
+                android:textOff="@string/set"
+                android:layout_height="wrap_content"
+                android:onClick="clickSet"
+                />
+        </TableRow>      
+        <TableRow android:id="@+id/rConn">
+            <include
+                layout="@layout/setconn"
+                android:layout_span="5"
+                />
+        </TableRow>
+        
+        
+        <TableRow>
+            <TextView 
+                android:text="抠图设置"
+                />
+            <ToggleButton 
+                android:id="@+id/bSetRGB"
+                android:textOn="@string/fold"
+                android:textOff="@string/set"
+                android:layout_column="4"
+                android:onClick="clickSet"
+                />
+        </TableRow>     
+        <TableRow 
+            android:id="@+id/rRGB">
+            <include
+                layout="@layout/setrgb"
+                android:layout_span="5"
+                />
+        </TableRow>
+           
+            
+        <TableRow>
+            <TextView 
+                android:text="纹理合成"
+                />
+            <ToggleButton 
+                android:id="@+id/bSetComb"
+                android:textOn="@string/fold"
+                android:textOff="@string/set"
+                android:layout_column="4"
+                android:onClick="clickSet"
+                />
+        </TableRow>
+        <TableRow android:id="@+id/rComb">
+            <include
+                layout="@layout/setcomb"
+                android:layout_span="5"
+                />
+        </TableRow>
+        
+            
+        <TableRow>
+            <TextView 
+                android:text="自动Lab校正"
+                />
+            <ToggleButton 
+                android:id="@+id/bSetLab"
+                android:textOn="@string/fold"
+                android:textOff="@string/set"
+                android:layout_column="4"
+                android:onClick="clickSet"
+                />
+        </TableRow>
+        <TableRow android:id="@+id/rLab">
+            <include
+                layout="@layout/setlab"
+                android:layout_span="5"
+                />
+        </TableRow>
+        
+        
+        <TableRow>
+            <TextView 
+                android:text="手动Lab校正"
+                />
+            <ToggleButton 
+                android:id="@+id/bSetManuLab"
+                android:textOn="@string/fold"
+                android:textOff="@string/set"
+                android:layout_column="4"
+                android:onClick="clickSet"
+                />
+        </TableRow>
+        <TableRow android:id="@+id/rManuLab">
+            <include
+                layout="@layout/setmanulab"
+                android:layout_span="5"
+                />
+        </TableRow>
+        
+            
+        <View
+            android:layout_height="4dp"
+            android:background="#808080"
+            />
+        
+        
+        <View
+            android:layout_height="2dp"
+            />
+        
+        <TableRow>
+            <include
+                layout="@layout/cmdbuttons"
+                android:layout_span="5"/>
+        </TableRow>
+        
+            
+        <TableRow>
+            <ImageView 
+                android:id="@+id/imgShow"
+                android:layout_span="5"
+                android:adjustViewBounds="true"
+                android:src="@drawable/image"
+        		/>
+        </TableRow>
+        
+        
+        <View
+            android:layout_height="2dp"
+            />
+        <View
+            android:layout_height="4dp"
+            android:background="#808080"
+            />
+        
+        
+        <TableRow>
+            <TextView
+                android:id="@+id/tState"
+                android:layout_span="5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/initState"
+                />
+        </TableRow>
+        
+    </TableLayout>
+    
+</ScrollView>
+

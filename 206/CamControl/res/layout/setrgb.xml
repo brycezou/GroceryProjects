@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:stretchColumns="1">
+        
+    <TableRow>
+        <TextView 
+            android:text="RGB1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+    	<EditText 
+    	    android:id="@+id/tR1"
+        	android:inputType="number"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="255"
+        	/>
+		<EditText 
+    	    android:id="@+id/tG1"
+        	android:inputType="number"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="255"
+        	/>
+		<EditText 
+    	    android:id="@+id/tB1"
+        	android:inputType="number"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="255"
+        	/>
+    </TableRow>
+    
+    <TableRow>
+        <TextView 
+            android:text="RGB2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+    	<EditText 
+    	    android:id="@+id/tR2"
+        	android:inputType="number"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="0"
+        	/>
+    	<EditText 
+    	    android:id="@+id/tG2"
+        	android:inputType="number"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="0"
+        	/>
+    	<EditText 
+    	    android:id="@+id/tB2"
+        	android:inputType="number"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="0"
+        	/>
+    </TableRow>    
+    
+    <TableRow>
+        <TextView 
+            android:text="RGB3"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+    	<EditText 
+    	    android:id="@+id/tR3"
+        	android:inputType="number"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="0"
+        	/>
+    	<EditText 
+    	    android:id="@+id/tG3"
+        	android:inputType="number"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="0"
+        	/>
+    	<EditText 
+    	    android:id="@+id/tB3"
+        	android:inputType="number"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="0"
+        	/>
+    </TableRow>
+    
+    <TableRow>
+        <TextView 
+        	android:text="屏高比"
+        	/>
+    	<EditText 
+    	    android:id="@+id/tKouTuBorder"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="0.02"
+        	/>
+    </TableRow>
+    
+	<TableRow>
+        <TextView 
+        	android:text="显示间隔"
+        	/>
+    	<EditText 
+    	    android:id="@+id/tDeltaTime"
+        	android:layout_column="2"
+        	android:minWidth="70dp"
+        	android:singleLine="true"
+        	android:text="5"
+        	/>
+		<TextView 
+        	android:text=" 秒"
+        	/> 	
+    </TableRow>
+     
+    <TableRow>
+        <Button
+            android:id="@+id/bOKRGB"
+            android:layout_column="5"
+            android:onClick="clickSetOK"
+            android:text="@string/strOK" 
+            />
+
+    </TableRow>
+    
+    <View
+        android:layout_height="2dp"
+        android:background="#404040"
+        />
+    
+</TableLayout>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">可见光隐身遥控器</string>
+    <string name="caption">欢迎使用可见光隐身遥控器v1.0</string>
+    <string name="set">设置</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">断开</string>
+    <string name="initIP">192.168.1.110</string>
+    <string name="initPort">1400</string>
+    <string name="initCutThres">2</string>
+    <string name="initLabThres">2</string>
+    <string name="initState">目前没有连接</string>
+    <string name="strOK">确定</string>
+    <string name="fold">折叠</string>
+
+</resources>
