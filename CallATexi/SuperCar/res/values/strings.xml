@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SuperCarActivity!</string>
+    <string name="app_name">SuperCar</string>
+	<string name="my_location">My location ...</string>
+	<string name="numpson">1</string>
+	<string name="trenshu">人数</string>
+	<string name="tmudidi">目的地</string>
+</resources>

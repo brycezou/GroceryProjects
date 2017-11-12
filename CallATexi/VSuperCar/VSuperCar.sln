@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSuperCar", "VSuperCar\VSuperCar.csproj", "{927F2FA5-1535-4ED3-980C-A55133F726A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{927F2FA5-1535-4ED3-980C-A55133F726A6}.Debug|x86.ActiveCfg = Debug|x86
+		{927F2FA5-1535-4ED3-980C-A55133F726A6}.Debug|x86.Build.0 = Debug|x86
+		{927F2FA5-1535-4ED3-980C-A55133F726A6}.Release|x86.ActiveCfg = Release|x86
+		{927F2FA5-1535-4ED3-980C-A55133F726A6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

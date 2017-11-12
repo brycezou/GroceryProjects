@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<TextView 
+        android:id="@+id/iMyLocation"
+        android:text="@string/my_location" 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+    <com.baidu.mapapi.MapView
+		android:id="@+id/iMapView"
+		android:layout_width="fill_parent"
+		android:layout_height="540dp"
+		android:clickable="true"
+		android:enabled="true" />	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="horizontal" >	
+    	<TextView
+    	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/trenshu" />
+    	<EditText
+	    	android:id="@+id/editNumPerson"
+	    	android:layout_width="50dp"
+	    	android:layout_height="wrap_content"
+	    	android:ems="10"
+	    	android:inputType="number" >"
+	    	<requestFocus />
+		</EditText>
+		<TextView
+    	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/tmudidi" />
+    	<EditText
+	    	android:id="@+id/editDestination"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:ems="10"
+	    	android:inputType="text" >"
+	    	<requestFocus />
+		</EditText>
+    	
+	</LinearLayout>
+	
+</LinearLayout>
